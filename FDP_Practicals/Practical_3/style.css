@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #111827;
+    line-height: 1.7;
+}
+
+/* Layout */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #f9fafb;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.subtitle {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: #cbd5f5;
+}
+
+.hero-desc {
+    margin-top: 20px;
+    max-width: 600px;
+    color: #e5e7eb;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: #020617;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+}
+
+/* SECTIONS */
+.section {
+    padding: 100px 0;
+}
+
+.section.light {
+    background: #f8fafc;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    padding: 24px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* PROJECTS */
+.project-card {
+    padding: 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #38bdf8;
+    background: #f8fafc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateX(6px);
+}
+
+/* FOOTER */
+.footer {
+    background: #020617;
+    color: #e5e7eb;
+    padding: 80px 0;
+}
+
+/* ANIMATIONS */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
