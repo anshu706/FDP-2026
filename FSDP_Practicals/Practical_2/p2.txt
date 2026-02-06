@@ -1,0 +1,155 @@
+✅ Task Breakdown
+
+Goal:
+Create a Git repository → add a README → commit → push to GitHub
+
+🔹 Step 1: Install & Verify Git
+Check if Git is installed
+git --version
+
+
+If not installed:
+
+Windows: https://git-scm.com/download/win
+
+Mac:
+
+brew install git
+
+
+Linux:
+
+sudo apt install git
+-----------------------------------------------------------------------------------
+
+🔹 Step 2: Configure Git (One-Time Setup)
+git config --global user.name "Your Name"
+git config --global user.email "your-email@gmail.com"
+
+
+Verify:
+
+git config --list
+----------------------------------------------------------------------------------
+
+🔹 Step 3: Create a Project Folder (Local Repo)
+mkdir learning-journey
+cd learning-journey
+------------------------------------------------------------------------------------
+
+🔹 Step 4: Initialize Git Repository
+git init
+
+
+You’ll see:
+
+Initialized empty Git repository
+-------------------------------------------------------------------------------------------
+
+🔹 Step 5: Create README.md
+Create file
+touch README.md
+
+Add content
+nano README.md
+
+
+OR open it in VS Code:
+
+code README.md
+
+Sample README Content
+# My Learning Journey 🚀
+
+This repository documents my journey as a software developer.
+
+## What I’m Learning
+- Python & Django
+- REST APIs
+- Docker & Kubernetes
+- Git & GitHub
+- System Design
+
+## Goals
+- Improve backend engineering skills
+- Build real-world projects
+- Crack software engineering interviews
+
+## Progress
+I will continuously update this repository with my learnings and projects.
+
+
+Save the file.
+------------------------------------------------------------------------------------------------------------------
+
+🔹 Step 6: Check Git Status
+git status
+
+
+You should see:
+
+Untracked files:
+  README.md
+
+-----------------------------------------------------------------------------------------------------------------
+
+🔹 Step 7: Add File to Git
+git add README.md
+
+
+Or add all files:
+
+git add .
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+🔹 Step 8: Commit Changes
+git commit -m "Add README describing my learning journey"
+-----------------------------------------------------------------------------------------------------------------
+
+🔹 Step 9: Create Repository on GitHub
+
+Go to 👉 https://github.com
+
+Click New Repository
+
+Repository name: learning-journey
+
+Visibility: Public or Private
+
+❌ Do NOT add README (already created)
+
+Click Create Repository
+-----------------------------------------------------------------------------------------------------------------
+
+
+🔹 Step 10: Connect Local Repo to GitHub
+
+Copy the GitHub repo URL and run:
+
+git branch -M main
+git remote add origin https://github.com/USERNAME/learning-journey.git
+
+
+Verify:
+
+git remote -v
+-----------------------------------------------------------------------------------------------------------------
+
+
+🔹 Step 11: Push Code to GitHub
+git push -u origin main
+
+
+Login when prompted.
+
+🔹 Step 12: Verify on GitHub ✅
+
+Refresh your GitHub repo
+
+README.md should be visible
+
+Commit message should appear
+
+🎉 Task completed successfully!

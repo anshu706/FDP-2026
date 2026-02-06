@@ -1,0 +1,7 @@
+print("123".isdigit())
+print("bcd".isalpha())
+print("bcd654".isalnum())
+print(" ".isspace())
+print("Hello".istitle())
+print("HELLO".isupper())
+print("hello".islower())
