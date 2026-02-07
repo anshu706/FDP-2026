@@ -1,0 +1,3 @@
+income,12000,13433.0
+income,red,12000.0
+expense,burger,900.0
