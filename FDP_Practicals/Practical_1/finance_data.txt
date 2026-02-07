@@ -1,5 +1,3 @@
------- Financial Summary ------
-Total Income   : ₹25433.00
-Total Expense  : ₹900.00
-Balance        : ₹24533.00
---------------------------------
+income,12000,13433.0
+income,red,12000.0
+expense,burger,900.0
